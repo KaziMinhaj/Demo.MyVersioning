@@ -17,3 +17,6 @@ branches:
     regex: ^bug/
     tag: useBranchName
     increment: Patch
+    source-branches:
+      - master
+      - feature
