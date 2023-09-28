@@ -1,28 +1,21 @@
 mode: Mainline
-tag-prefix: '[vV]'
 major-version-bump-message: '\+major'
 minor-version-bump-message: '\+minor'
 patch-version-bump-message: '\+patch'
 commit-date-format: 'yyyy-MM-dd'
 branches:
   master:
-    tag: ''
     regex: ^master$
+    tag: ''
     increment: patch
     is-mainline: true
-    is-release-branch: false
-    track-merge-target: false
-    tracks-release-branches: false
-    prevent-increment-of-merged-branch-version: true
 
   feature:
-    regex: ^feature/
+    regex: ^(feature|features|feat)[/-]
     tag: useBranchName
     increment: Patch
 
   bug:
-    regex: ^bug/
+    regex: ^(bug|bugfix)[/-]
     tag: useBranchName
     increment: Patch
-    source-branches:
-      - master
