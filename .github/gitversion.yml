@@ -9,7 +9,6 @@ branches:
     regex: ^master$
     increment: patch
     is-mainline: true
-    track-merge-target: false
     tracks-release-branches: false
     prevent-increment-of-merged-branch-version: true
   feature:
