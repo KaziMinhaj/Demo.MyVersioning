@@ -13,6 +13,8 @@ branches:
     regex: ^feature/
     tag: useBranchName
     increment: Patch
+    source-branches:
+      - master
   bug:
     regex: ^bug/
     tag: useBranchName
